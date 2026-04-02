@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: fromdocktocloud/kubernetes-githubactions-fluxcd:v1.0.0
+          image: fromdocktocloud/kubernetes-githubactions-fluxcd:9bed7ee5ddcda35502673e4490ac7b274a02d872
           ports:
             - containerPort: 5000
           livenessProbe:
