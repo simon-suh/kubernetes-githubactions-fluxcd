@@ -6,7 +6,8 @@ app = Flask(__name__)
 def index():
     return jsonify({
         "app": "kubernetes-githubactions-fluxcd",
-        "status": "running"
+        "status": "running",
+        "version": "2.0.0"
     })
 
 @app.route('/health')
@@ -14,7 +15,8 @@ def health():
     return jsonify({
         "status": "healthy",
         "app": "kubernetes-githubactions-fluxcd",
-        "message": "Pipeline deployed successfully"
+        "message": "Pipeline deployed successfully",
+        "version": "2.0.0"
     })
 
 if __name__ == '__main__':
