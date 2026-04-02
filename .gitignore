@@ -10,6 +10,8 @@ venv/
 
 # Kubernetes
 *.kubeconfig
+kubectl
+minikube-linux-amd64
 
 # Terraform
 *.tfstate
